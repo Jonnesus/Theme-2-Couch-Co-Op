@@ -19,7 +19,8 @@ using UnityEngine;
         void Awake() => Invoke(nameof(Activate), 0.5f);
         void Activate() =>  _active = true;
         
-        private void Update() {
+        private void Update()
+        {
             if(!_active) return;
             // Calculate velocity
             Velocity = (transform.position - _lastPosition) / Time.deltaTime;
@@ -34,8 +35,6 @@ using UnityEngine;
             CalculateJump(); // Possibly overrides vertical
 
             MoveCharacter(); // Perform the axis movement
-
-        ScaleSize();
         }
 
 
@@ -303,22 +302,4 @@ using UnityEngine;
         }
 
     #endregion
-
-        void ScaleSize()
-        {
-            if (Input.Fire1)
-            {
-                objectScale = transform.localScale;
-                objectScale.x += Time.deltaTime;
-                objectScale.y += Time.deltaTime;
-                transform.localScale = objectScale;
-            }
-            if (Input.Fire2)
-            {
-                objectScale = transform.localScale;
-                objectScale.x -= Time.deltaTime;
-                objectScale.y -= Time.deltaTime;
-                transform.localScale = objectScale;
-            }
-        }
 }
