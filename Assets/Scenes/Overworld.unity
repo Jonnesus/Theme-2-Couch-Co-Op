@@ -10679,6 +10679,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2048681013}
     m_Modifications:
+    - target: {fileID: 1442387709, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0.75294125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442387709, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.9960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442387709, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1442387709, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.m_ColorSpace
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548739750, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.b
+      value: 0.75294125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548739750, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.g
+      value: 0.9960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548739750, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.key0.r
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1548739750, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: InitialModule.startColor.maxGradient.m_ColorSpace
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 45607340346192518, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: _tiltSpeed
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 45607340346192518, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
+      propertyPath: _maxIdleSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6432609860406773168, guid: 42303504a4fc90a43bc5178df9876bf2, type: 3}
       propertyPath: _groundLayer.m_Bits
       value: 64

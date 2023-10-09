@@ -57,7 +57,7 @@ using Random = UnityEngine.Random;
                 _playerGrounded = true;
                 _moveParticles.Play();
                 _landParticles.transform.localScale = Vector3.one * Mathf.InverseLerp(0, _maxParticleFallSpeed, _movement.y);
-                SetColor(_landParticles);
+                //SetColor(_landParticles);
                 _landParticles.Play();
             }
             else if (_playerGrounded && !_player.Grounded) {
@@ -69,7 +69,7 @@ using Random = UnityEngine.Random;
             var groundHit = Physics2D.Raycast(transform.position, Vector3.down, 2, _groundMask);
             if (groundHit && groundHit.transform.TryGetComponent(out SpriteRenderer r)) {
                 _currentGradient = new ParticleSystem.MinMaxGradient(r.color * 0.9f, r.color * 1.2f);
-                SetColor(_moveParticles);
+                //SetColor(_moveParticles);
             }
 
             _movement = _player.RawMovement; // Previous frame movement is more valuable
