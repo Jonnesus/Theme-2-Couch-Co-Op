@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour, IPlayerController
+public class PlayerController2 : MonoBehaviour, IPlayerController
 {
     public Vector3 Velocity { get; private set; }
     public FrameInput Input { get; private set; }
@@ -45,9 +45,9 @@ public class PlayerController : MonoBehaviour, IPlayerController
         {
             Input = new FrameInput
             {
-                JumpDown = UnityEngine.Input.GetButtonDown("Jump"),
-                JumpUp = UnityEngine.Input.GetButtonUp("Jump"),
-                X = UnityEngine.Input.GetAxisRaw("Horizontal"),
+                JumpDown = UnityEngine.Input.GetButtonDown("Jump2"),
+                JumpUp = UnityEngine.Input.GetButtonUp("Jump2"),
+                X = UnityEngine.Input.GetAxisRaw("Horizontal2"),
                 Fire1 = UnityEngine.Input.GetButton("Fire1"),
                 Fire2 = UnityEngine.Input.GetButton("Fire2")
             };
