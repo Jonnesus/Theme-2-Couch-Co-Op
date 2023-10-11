@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour, IPlayerController
 {
@@ -18,6 +17,7 @@ public class PlayerController : MonoBehaviour, IPlayerController
     private bool facingRight = true;
 
     private bool _active;
+
     void Awake() =>Invoke(nameof(Activate), 0.5f);
     void Activate() =>  _active = true;
 
