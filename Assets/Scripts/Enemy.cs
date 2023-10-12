@@ -3,6 +3,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health = 100;
+    [SerializeField] ScoreCounter scoreCounter;
     
     public void TakeDamage (int damage)
     {
@@ -14,8 +15,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    void Die ()
+    private void Die ()
     {
+        scoreCounter.score += 100;
         Destroy(gameObject);
     }
 }

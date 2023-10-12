@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerController2 : MonoBehaviour, IPlayerController
 {
@@ -48,8 +47,6 @@ public class PlayerController2 : MonoBehaviour, IPlayerController
                 JumpDown = UnityEngine.Input.GetButtonDown("Jump2"),
                 JumpUp = UnityEngine.Input.GetButtonUp("Jump2"),
                 X = UnityEngine.Input.GetAxisRaw("Horizontal2"),
-                Fire1 = UnityEngine.Input.GetButton("Fire1"),
-                Fire2 = UnityEngine.Input.GetButton("Fire2")
             };
             if (Input.JumpDown)
             {

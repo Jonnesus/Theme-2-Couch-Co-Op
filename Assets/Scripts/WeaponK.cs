@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public class WeaponK : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;

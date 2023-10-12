@@ -48,8 +48,6 @@ public class PlayerController : MonoBehaviour, IPlayerController
                 JumpDown = UnityEngine.Input.GetButtonDown("Jump"),
                 JumpUp = UnityEngine.Input.GetButtonUp("Jump"),
                 X = UnityEngine.Input.GetAxisRaw("Horizontal"),
-                Fire1 = UnityEngine.Input.GetButton("Fire1"),
-                Fire2 = UnityEngine.Input.GetButton("Fire2")
             };
             if (Input.JumpDown)
             {
